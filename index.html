@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --cream:#F4F8F8; --cream-2:#E3EFF0; --teal:#1C4A66; --teal-2:#2A6787; --foam:#A9DEDC; --sand:#F2D3AE; --coral:#F0A08C; --coral-deep:#CF7660; --coral-soft:#F8BBAA;
+  --cream:#F4F8F8; --cream-2:#E3EFF0; --teal:#2B5C78; --teal-2:#3C7590; --foam:#A9DEDC; --sand:#F2D3AE; --coral:#F0A08C; --coral-deep:#CF7660; --coral-soft:#F8BBAA;
   --gold:#2A7E8C; --ink:#17303D; --muted:#4D6571; --line:rgba(28,74,102,.14);
   --serif:'Cormorant Garamond',Georgia,serif; --sans:'DM Sans',system-ui,sans-serif;
 }
@@ -186,6 +186,27 @@ footer{padding:40px 0;font-size:.85rem;color:var(--muted)}
 .btn-primary{background:linear-gradient(135deg,#174D6D,#2A7F93)}
 .btn-primary:hover{background:linear-gradient(135deg,#1B5A7E,#3290A3)}
 .portrait{background:linear-gradient(160deg,#2B8496,#0E3450)}
+/* soft, feminine palette */
+.hero{background:radial-gradient(ellipse 55% 70% at 85% 30%,rgba(247,200,186,.35),transparent 70%),linear-gradient(180deg,#FBF4F1 0%,#EEF6F7 100%)}
+.feature{background:linear-gradient(135deg,#FBE8E1 0%,#F3F1EE 45%,#DDEFF1 100%);color:var(--ink)}
+.cta{background:linear-gradient(225deg,#FBE8E1 0%,#F1F3F1 45%,#D8ECEF 100%);color:var(--ink)}
+.feature h2,.feature h3,.cta h2{color:var(--teal)}
+.feature .lede,.cta p{color:var(--muted)}
+.feature em,.cta em{color:var(--gold)}
+.feature .eyebrow,.cta .eyebrow{color:var(--coral-deep)}
+.stat{border-left-color:var(--coral)}
+.stat .num{color:var(--coral-deep)}
+.stat p{color:var(--ink)}
+.stat small{color:var(--muted)}
+.stat small a{color:var(--teal)}
+.cta .btn-ghost{border-color:var(--teal);color:var(--teal)}
+.cta .btn-ghost:hover{background:var(--teal);color:#fff}
+.soft{background:linear-gradient(180deg,#F0F6F7 0%,#FBF3F0 100%)}
+.btn-primary{background:linear-gradient(135deg,#2E6683,#4A8FA2)}
+.btn-primary:hover{background:linear-gradient(135deg,#346F8D,#549AAD)}
+.orb{background:radial-gradient(circle at 32% 30%,#F9D3C7,#9FCFD5 52%,#4E8DA2);box-shadow:0 0 0 18px rgba(240,160,140,.12),0 0 0 40px rgba(120,190,200,.10)}
+.orb-label{color:#2B5C78}
+.portrait{background:linear-gradient(160deg,#F5C9BC,#7FB6C2)}
 /* reveal */
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
 .reveal.in{opacity:1;transform:none}
@@ -219,10 +240,10 @@ footer{padding:40px 0;font-size:.85rem;color:var(--muted)}
     <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
     <ul class="nav-links">
       <li><a href="#why">Why it matters</a></li>
-      <li><a href="#workshops">Workshops</a></li>
+      <li><a href="#workshops">Experiences</a></li>
       <li><a href="#formats">Formats</a></li>
       <li><a href="#about">About</a></li>
-      <li><a class="btn btn-primary" href="https://calendly.com/contact-breatheintobloom/30min" target="_blank" rel="noopener">Book a call</a></li>
+      <li><a class="btn btn-primary" href="https://calendly.com/contact-breatheintobloom/30min" target="_blank" rel="noopener">Let's talk</a></li>
     </ul>
   </div>
 </header>
@@ -235,11 +256,16 @@ footer{padding:40px 0;font-size:.85rem;color:var(--muted)}
     <div class="reveal">
       <p class="eyebrow">Fertility &amp; women's health at work</p>
       <h1>Your team understands their work. <em>Few understand their bodies.</em></h1>
-      <p class="lede">Nurse-led workshops for workplaces and healthcare teams. Your people learn what's actually happening in their bodies, from fertility to the menstrual cycle, and leave with simple breathwork and somatic tools they can use the same day.</p>
-      <p class="not-line">Ten years. Thousands of hands held through fertility treatment. Now I'm here for your team.</p>
+      <p class="lede">Nurse-led workshops bringing fertility, hormones, and women's health into the workplace. We combine clinical insight with practical breathwork and somatic tools, giving people the knowledge to understand their bodies and the confidence to advocate for themselves.</p>
+      <p class="not-line">Women's health has been overlooked for far too long. It's time we brought the conversation into the room.</p>
       <div class="actions">
-        <a class="btn btn-primary" href="https://calendly.com/contact-breatheintobloom/30min" target="_blank" rel="noopener">Bring a workshop to your team</a>
-        <a class="btn btn-ghost" href="#workshops">See the workshops</a>
+        <a class="btn btn-primary" href="#workshops">Explore workplace experiences</a>
+        <a class="btn btn-ghost" href="https://calendly.com/contact-breatheintobloom/30min" target="_blank" rel="noopener">Discuss a workplace experience</a>
+      </div>
+      <div class="creds">
+        <span>RN, BScN</span>
+        <span>11+ years in nursing</span>
+        <span>A decade in fertility care</span>
       </div>
     </div>
     <div class="orb-wrap" aria-hidden="true">
@@ -270,10 +296,10 @@ footer{padding:40px 0;font-size:.85rem;color:var(--muted)}
   <div class="wrap">
     <div class="track-head reveal">
       <div>
-        <p class="eyebrow">Workshops</p>
+        <p class="eyebrow">Workplace experiences</p>
         <h2>Clear information. <em>Practical tools.</em></h2>
       </div>
-      <p class="lede" style="max-width:400px">Every workshop pairs plain-language education from a fertility nurse with breathwork and somatic tools people can use right away.</p>
+      <p class="lede" style="max-width:400px">Every experience pairs clinical insight from a fertility nurse with evidence-informed breathwork and somatic regulation practices.</p>
     </div>
     <div class="topics">
       <div class="topic reveal">
@@ -328,10 +354,10 @@ footer{padding:40px 0;font-size:.85rem;color:var(--muted)}
       <h2>Knowledge they can trust. <em>Tools they'll actually use.</em></h2>
     </div>
     <div class="outcomes four">
-      <div class="outcome reveal"><strong>Understanding</strong><p>Accurate, plain-language information about fertility and the body, from someone who works in it every day.</p></div>
+      <div class="outcome reveal"><strong>Body literacy</strong><p>Accurate, plain-language understanding of fertility, hormones, and the body, from someone who works in it every day.</p></div>
       <div class="outcome reveal"><strong>Language</strong><p>Words to talk about fertility and women's health at work, for employees and for the leaders supporting them.</p></div>
-      <div class="outcome reveal"><strong>Tools</strong><p>Short breathwork and somatic practices for appointments, decisions, demanding days, and difficult conversations.</p></div>
-      <div class="outcome reveal"><strong>Better questions</strong><p>Knowing what to ask their own doctor, and where to find reliable information.</p></div>
+      <div class="outcome reveal"><strong>Tools</strong><p>Evidence-informed regulation practices for appointments, decisions, demanding days, and difficult conversations.</p></div>
+      <div class="outcome reveal"><strong>Self-advocacy</strong><p>The confidence to ask their own doctor informed questions, and know where to find reliable information.</p></div>
     </div>
   </div>
 </section>
@@ -364,7 +390,7 @@ footer{padding:40px 0;font-size:.85rem;color:var(--muted)}
     </div>
     <div class="steps">
       <div class="step reveal"><div class="n">01</div><h3>Discovery call</h3><p>We talk about your team, their questions, and what you'd like them to take away.</p></div>
-      <div class="step reveal"><div class="n">02</div><h3>Tailored workshop</h3><p>I shape the content and tools to your group's needs, size, and setting.</p></div>
+      <div class="step reveal"><div class="n">02</div><h3>Tailored experience</h3><p>I shape the content and tools to your group's needs, size, and setting.</p></div>
       <div class="step reveal"><div class="n">03</div><h3>Learn &amp; practise</h3><p>Clear education, time for questions (including anonymous ones), and tools practised together.</p></div>
       <div class="step reveal"><div class="n">04</div><h3>Take-home tools</h3><p>A short guide so people can keep using the practices after the session.</p></div>
     </div>
@@ -382,7 +408,7 @@ footer{padding:40px 0;font-size:.85rem;color:var(--muted)}
       <p class="eyebrow">Led by Oxana, RN, BScN</p>
       <h2>A fertility nurse who <em>translates the body.</em></h2>
       <p>Oxana is a Registered Nurse (RN, BScN) with a decade in the fertility space. Today she is a nursing leader at one of the largest and busiest fertility clinics in Canada. She has guided patients through every stage of treatment, and knows the questions people are afraid to ask.</p>
-      <p>She is also a certified Somatics and Breathwork Facilitator. Her workshops bring the two together: accurate clinical knowledge in plain language, and practical tools people can actually use.</p>
+      <p>She is also a certified Somatics and Breathwork Facilitator. Her workplace experiences bring the two together: accurate clinical knowledge in plain language, and practical tools people can actually use.</p>
       <div class="badges">
         <div class="badge"><strong>Nursing leader</strong>One of Canada's busiest fertility clinics</div>
         <div class="badge"><strong>Fertility care</strong>A decade in the field</div>
@@ -396,9 +422,9 @@ footer{padding:40px 0;font-size:.85rem;color:var(--muted)}
 <section class="cta">
   <div class="wrap reveal">
     <h2>Bring this to <em>your team.</em></h2>
-    <p>Book a short call to talk about your group and which workshop fits.</p>
+    <p>A short conversation about your organization, your people, and which experience fits.</p>
     <div class="actions">
-      <a class="btn btn-gold" href="https://calendly.com/contact-breatheintobloom/30min" target="_blank" rel="noopener">Book a discovery call</a>
+      <a class="btn btn-gold" href="https://calendly.com/contact-breatheintobloom/30min" target="_blank" rel="noopener">Discuss a workplace experience</a>
       <a class="btn btn-ghost" href="mailto:contact@breatheintobloom.com">contact@breatheintobloom.com</a>
     </div>
   </div>
@@ -413,7 +439,7 @@ footer{padding:40px 0;font-size:.85rem;color:var(--muted)}
       <span>RN, BScN &middot; Somatics &amp; Breathwork Facilitator</span>
     </div>
     <p class="private">Looking for a 1:1 private session? <a href="https://calendly.com/contact-breatheintobloom/discovery-call-for-you" target="_blank" rel="noopener">Book a session</a></p>
-    <p class="disclaimer">Workshops provide general education and practical tools. They are not individual medical advice and do not replace care from your own health providers.</p>
+    <p class="disclaimer">Workplace experiences provide general education and practical tools. They are not individual medical advice and do not replace care from your own health providers.</p>
   </div>
 </footer>
 
